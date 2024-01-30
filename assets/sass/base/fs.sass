@@ -1,0 +1,44 @@
+@import "../vars/fonts.sass"
+    
+@font-face
+    font-family: "Rubik-Regular"
+    src: url(../fonts/Rubik-Regular.ttf)
+
+@font-face
+    font-family: "Jost-Regular"
+    src: url(../fonts/Jost-Regular.ttf)
+
+@font-face
+    font-family: "Jost-Medium"
+    src: url(../fonts/Jost-Medium.ttf)
+
+body
+    font-family: $regular-rubik!important
+
+h2, h3, h4, h5, h6, a, p, span, label, input, textarea, li, ul, ol, button
+    line-height: normal!important
+    font-style: normal
+
+h1
+    font-size: clamp(1.25rem, -2.0898rem + 5.3922vw, 2.625rem)!important
+    font-family: $medium-jost
+
+h2
+    font-size: clamp(1.5rem, 1.2185rem + 1.6086vw, 2.625rem)!important
+    font-family: $regular-jost
+
+h3
+    font-size: clamp(1.125rem, 0.5178rem + 0.9804vw, 1.375rem)!important
+    font-family: $regular-jost  
+
+h4
+    font-size: clamp(1.25rem, 0.6428rem + 0.9804vw, 1.5rem)!important
+    font-family: $regular-jost
+
+.top-contact
+    p
+        font-size: clamp(0.75rem, 0.4464rem + 0.4902vw, 0.875rem)!important
+
+button
+    font-size: clamp(0.875rem, 0.5714rem + 0.4902vw, 1rem)!important
+    font-family: $regular-jost!important

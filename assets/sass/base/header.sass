@@ -1,0 +1,152 @@
+@import "vars/colors"
+@import "vars/vars"
+@import "pages/form"
+    
+.top-contact
+    padding: 14px 0
+    .icon
+        margin-right: 12px
+        @media screen and (max-width: 767px)
+            &
+                margin-right: 0px
+        &.search, &.mail, &.map
+            padding-left: 12px
+    svg
+        transition: .3s ease
+        width: 18px
+        height: 18px
+        margin-right: 16px
+    p
+        transition: .3s ease
+    .modal
+        .modal-body
+            padding: 30px 20px!important
+            button.btn-close
+                opacity: 1!important
+                margin-right: 12px
+                svg
+                    width: 30px
+                    height: 30px
+        @extend %form
+    .social-icon
+        svg
+            margin-right: 26px
+
+.dropdown
+    &:hover > .dropdown-menu
+        margin-top: 0px!important
+        display: block
+        margin-top:0px
+        margin-left: 0px!important
+        opacity: 1!important
+        border-radius: 8px
+        padding: 0 16px!important
+    .dropdown-menu
+        display: none
+        transition: .0s ease
+        opacity: 0 !important
+        z-index: 999999
+        transition-delay: 1s
+        .nav-item
+            .dropdown-toggle
+                &::after
+                    margin-bottom: 2px!important
+                    margin-left: 5px!important
+        .dropdown-item
+            margin: 12px 0
+    .dropend
+        &:hover > .dropdown-menu
+            display: block
+            margin-top:0px
+            margin-left: 0px!important
+            opacity: 1!important
+            @media screen and (min-width: 919px)
+                &
+                    position: absolute
+                    top: 0
+                    left: 110%
+
+.navbar-brand
+    margin: 30px 0!important
+    img
+        margin-right: 20px
+        width: 130px
+        height: auto
+        @media screen and (max-width: 991px)
+            &
+                width: 70px
+    .name
+        h3
+            white-space: normal
+            max-width: 655px
+            width: 100%
+            margin-bottom: 16px
+            @media screen and (max-width: 767px)
+                &
+                    margin-top: 20px
+    .contact-nav
+        margin-left: 30px
+        @media screen and (max-width: 767px)
+            &
+                margin-top: 30px
+                margin-left: 0px
+        .item
+            margin-bottom: 20px
+            @media screen and (max-width: 767px)
+                &
+                    margin-bottom: 0px
+            .icon
+                svg
+                    width: 16px
+                    height: 16px
+                    margin-right: 10px
+                    @media screen and (max-width: 991px)
+                        &
+                            margin-right: 0px
+                    @media screen and (max-width: 767px)
+                        &
+                            width: 18px
+                            height: 18px
+                            margin-right: 24px
+            .text
+                p
+                    white-space: normal
+
+.navbar
+    @extend %btn-phone
+    @extend %form
+    padding: 20px 0!important
+    .btn-close
+        border-radius: 8px
+        opacity: 1
+    .navbar-toggler
+        padding: 17px
+        border-radius: $radius
+        box-shadow: none!important
+        @media screen and (max-width: 767px)
+            &
+                padding: 12px 12px!important
+        svg
+            width: 20px
+            height: 20px
+    .navbar-nav
+        @media screen and (max-width: 991px)
+            &
+                margin: 14px 20px
+        .nav-item
+            .nav-link
+                margin: 0px
+                white-space: nowrap
+                @media screen and (max-width: 1199px)
+                    &
+                        margin: 0px 4px
+                @media screen and (max-width: 991px)
+                    &
+                        margin: 14px 0px
+                &.dropdown-toggle
+                    &::after
+                        vertical-align: 0.155em
+                        width: 11px
+                        height: 7px
+                        margin-left: 8px!important
+                        border: none

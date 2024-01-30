@@ -1,0 +1,61 @@
+footer {
+  margin-top: 200px;
+  padding: 60px 0px 50px 0px;
+}
+footer h3 {
+  margin-bottom: 50px;
+}
+@media screen and (max-width: 991px) {
+  footer h3 {
+    margin-top: 50px;
+  }
+}
+@media screen and (max-width: 767px) {
+  footer .navbar-brand img {
+    margin-bottom: 20px;
+  }
+}
+footer .social-icon a {
+  margin-right: 40px;
+}
+footer .social-icon a .icon {
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+  border-radius: 8px;
+}
+footer .social-icon a .icon svg {
+  width: 18px;
+  height: 18px;
+}
+footer hr {
+  margin: 50px 0 !important;
+  opacity: 1 !important;
+  height: 1px;
+}
+footer .footer-menu ul {
+  margin-right: 90px;
+}
+@media screen and (max-width: 300px) {
+  footer .footer-menu ul {
+    margin-right: 30px;
+  }
+}
+footer .footer-menu ul li {
+  margin-bottom: 24px;
+}
+footer .footer-contact .item {
+  margin-bottom: 24px;
+}
+footer .footer-contact .item .icon {
+  margin-right: 12px;
+}
+footer .footer-contact .item .icon svg {
+  width: 18px;
+  height: 18px;
+}
+@media screen and (max-width: 991px) {
+  footer .footer-contact {
+    margin-bottom: 50px;
+  }
+}

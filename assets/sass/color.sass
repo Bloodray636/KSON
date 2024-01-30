@@ -1,0 +1,227 @@
+h1, h2, h3, h4, h5 
+    color: $black!important
+
+h6
+    color: $blue!important
+
+p
+    color: $dark-color-1
+
+button
+    color: $white!important
+    background-color: $dark-blue!important
+
+.btn-close
+    background-color: $white!important
+
+.modal-content
+    background-color: $blue
+    button.btn-close
+        background-color: transparent!important
+
+.dropdown
+    &:hover > .dropdown-menu
+        border: 1px solid $dark-blue!important
+
+.linear-slider
+    background-image: linear-gradient(90deg, rgba(37, 37, 37, 0.00) -8.18%, rgba(37, 37, 37, 0.00) 84.7%, rgba(37, 37, 37, 0.56) 106.48%)
+    @media screen and (max-width: 991px)
+        &
+            background-image: linear-gradient(90deg, rgba(37, 37, 37, 0.00) -8.18%, rgba(37, 37, 37, 0.00) 74.7%, rgba(37, 37, 37, 0.56) 106.48%)
+    @media screen and (max-width: 575px)
+        &
+            background-image: linear-gradient(90deg, rgba(37, 37, 37, 0.00) -8.18%, rgba(37, 37, 37, 0.00) 44.7%, rgba(37, 37, 37, 0.56) 106.48%)
+    
+.top-contact
+    background: $blue
+    .modal-content
+        background-color: $blue
+        border: none!important
+        h4
+            color: $white!important
+    .icon
+        svg
+            fill: $white
+    a
+        p
+            color: $white
+    .social-icon
+        svg
+            fill: $white
+
+.contact-nav
+    .icon
+        svg
+            fill: $blue
+
+.navbar
+    background: $blue
+    .navbar-toggler 
+        svg
+            fill: $white
+    &-brand
+        h6
+            color: $blue
+    .nav-link
+        color: $white
+        &
+            color: $white!important
+        @media screen and (max-width: 991px)
+            &
+                color: $black!important
+        &:hover
+            color: $black
+        &.dropdown-toggle
+            &::after
+                background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='11' height='7' viewBox='0 0 11 7' fill='none'%3e%3cpath d='M5.5 7C5.26429 7 4.95 6.91139 4.79286 6.64557L0.235714 1.50633C-0.0785714 1.1519 -0.0785714 0.620253 0.235714 0.265823C0.55 -0.0886076 1.02143 -0.0886076 1.33571 0.265823L5.5 4.96203L9.66429 0.265823C9.97857 -0.0886076 10.45 -0.0886076 10.7643 0.265823C11.0786 0.620253 11.0786 1.1519 10.7643 1.50633L6.20714 6.64557C6.05 6.82278 5.73571 7 5.5 7Z' fill='#{$dropdown}'/%3e%3c/svg%3e")
+                @media screen and (max-width: 991px)
+                    &
+                        background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='11' height='7' viewBox='0 0 11 7' fill='none'%3e%3cpath d='M5.5 7C5.26429 7 4.95 6.91139 4.79286 6.64557L0.235714 1.50633C-0.0785714 1.1519 -0.0785714 0.620253 0.235714 0.265823C0.55 -0.0886076 1.02143 -0.0886076 1.33571 0.265823L5.5 4.96203L9.66429 0.265823C9.97857 -0.0886076 10.45 -0.0886076 10.7643 0.265823C11.0786 0.620253 11.0786 1.1519 10.7643 1.50633L6.20714 6.64557C6.05 6.82278 5.73571 7 5.5 7Z' fill='#{$dropdown-tel}'/%3e%3c/svg%3e")!important
+
+.carousel 
+    .carousel-indicators
+        button
+            background-color: $white!important
+            &.active
+                background-color: $dark-blue!important
+    
+.main-content
+    .left-menu
+        background: $blue
+        li
+            background-color: $blue
+            border-left: 0px solid $dark-blue!important
+            a
+                color: $white!important
+                &::after
+                    background: $white
+            &:hover
+                background-color: $white
+                border-left: 3px solid $dark-blue!important
+                a
+                    color: $blue!important
+                    &::after
+                        background: $blue!important
+    .img-box
+        &::after
+            background: $blue
+
+.news
+    .card
+        box-shadow: $shadow
+        transition: .5s ease
+        border: 1px solid $white!important
+        transition: .5s ease
+        &:hover
+            box-shadow: none!important
+            border: 1px solid $dark-blue!important
+            .card-footer 
+                p
+                    color: $dark-blue!important
+                svg
+                    fill: $dark-blue!important
+        .date
+            .icon
+                svg
+                    fill: $dark-blue
+        hr
+            background: $line
+        &-footer
+            p
+                transition: .5s ease
+                color: $link
+            .icon
+                svg
+                    transition: .5s ease
+                    fill: $link
+
+.current, .useful-links
+    .owl-carousel 
+        .owl-nav
+            .owl-next
+                background: $white!important
+                box-shadow: $shadow!important
+                background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 14 14' fill='none'%3e%3cg clip-path='url(%23clip0_90_254)'%3e%3cpath d='M7.6885 13.7026L13.715 7.69841C14.0906 7.31538 14.0994 6.67395 13.715 6.29089L7.6885 0.286691C7.32189 -0.0785637 6.71391 -0.0963335 6.32939 0.242149C5.89128 0.616328 5.87336 1.29333 6.27572 1.70309L10.6034 6.01472C10.6034 6.01472 0.973467 6.01472 0.955631 6.01472C-0.305112 6.01472 -0.331905 8.01016 0.955631 8.01016H10.6034L6.27576 12.3218C5.89132 12.7049 5.89132 13.3463 6.27576 13.7293C6.66917 14.0946 7.29506 14.0946 7.6885 13.7026Z' fill='#{$arrow}'/%3e%3c/g%3e%3cdefs%3e%3cclipPath id='clip0_90_254'%3e%3crect width='14' height='14' fill='white' transform='matrix(0 -1 1 0 0 14)'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e")!important
+                background-repeat: no-repeat!important
+                background-position: center center!important
+                border: 1px solid $white!important
+                &:hover
+                    transition: .5s ease
+                    box-shadow: none!important 
+                    border: 1px solid $dark-blue!important
+                    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 14 14' fill='none'%3e%3cg clip-path='url(%23clip0_90_254)'%3e%3cpath d='M7.6885 13.7026L13.715 7.69841C14.0906 7.31538 14.0994 6.67395 13.715 6.29089L7.6885 0.286691C7.32189 -0.0785637 6.71391 -0.0963335 6.32939 0.242149C5.89128 0.616328 5.87336 1.29333 6.27572 1.70309L10.6034 6.01472C10.6034 6.01472 0.973467 6.01472 0.955631 6.01472C-0.305112 6.01472 -0.331905 8.01016 0.955631 8.01016H10.6034L6.27576 12.3218C5.89132 12.7049 5.89132 13.3463 6.27576 13.7293C6.66917 14.0946 7.29506 14.0946 7.6885 13.7026Z' fill='#{$arrow-hover}'/%3e%3c/g%3e%3cdefs%3e%3cclipPath id='clip0_90_254'%3e%3crect width='14' height='14' fill='white' transform='matrix(0 -1 1 0 0 14)'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e")!important
+            .owl-prev
+                background: $white!important
+                box-shadow: $shadow!important
+                background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 14 14' fill='none'%3e%3cg clip-path='url(%23clip0_90_254)'%3e%3cpath d='M6.3115 0.297391L0.285015 6.30159C-0.0905523 6.68462 -0.099431 7.32605 0.285015 7.70911L6.3115 13.7133C6.67811 14.0786 7.28609 14.0963 7.67061 13.7579C8.10872 13.3837 8.12664 12.7067 7.72428 12.2969L3.39665 7.98528C3.39665 7.98528 13.0265 7.98528 13.0444 7.98528C14.3051 7.98528 14.3319 5.98984 13.0444 5.98984L3.39665 5.98984L7.72424 1.67817C8.10868 1.29515 8.10868 0.653722 7.72424 0.270659C7.33083 -0.094557 6.70494 -0.094557 6.3115 0.297391Z' fill='#{$arrow}'/%3e%3c/g%3e%3cdefs%3e%3cclipPath id='clip0_90_254'%3e%3crect width='14' height='14' fill='white' transform='matrix(0 1 -1 0 14 0)'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e")!important
+                background-repeat: no-repeat!important
+                background-position: center center!important
+                transition: .5s ease
+                border: 1px solid $white!important
+                &:hover
+                    transition: .5s ease
+                    box-shadow: none!important 
+                    border: 1px solid $dark-blue!important
+                    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 14 14' fill='none'%3e%3cg clip-path='url(%23clip0_90_254)'%3e%3cpath d='M6.3115 0.297391L0.285015 6.30159C-0.0905523 6.68462 -0.099431 7.32605 0.285015 7.70911L6.3115 13.7133C6.67811 14.0786 7.28609 14.0963 7.67061 13.7579C8.10872 13.3837 8.12664 12.7067 7.72428 12.2969L3.39665 7.98528C3.39665 7.98528 13.0265 7.98528 13.0444 7.98528C14.3051 7.98528 14.3319 5.98984 13.0444 5.98984L3.39665 5.98984L7.72424 1.67817C8.10868 1.29515 8.10868 0.653722 7.72424 0.270659C7.33083 -0.094557 6.70494 -0.094557 6.3115 0.297391Z' fill='#{$arrow-hover}'/%3e%3c/g%3e%3cdefs%3e%3cclipPath id='clip0_90_254'%3e%3crect width='14' height='14' fill='white' transform='matrix(0 1 -1 0 14 0)'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e")!important
+
+.advantages
+    .item
+        .icon
+            background: $dark-blue
+            svg
+                fill: $white
+        .content
+            h3
+                color: $blue!important
+
+form
+    background-color: $blue
+    h3, h6
+        color: $white!important
+    label
+        color: $white!important
+        a
+            color: $white
+    button
+        background: $white!important
+        color: $dark-blue!important
+
+footer
+    background-color: $blue
+    h3
+        color: $white!important
+    .social-icon
+        .icon
+            background: $white!important
+            svg
+                fill: $white
+    hr
+        background: $line!important
+    .footer-menu
+        li
+            background-color: transparent
+            a
+                color: $white
+                &:hover
+                    color: $white!important
+    .footer-contact
+        .item
+            .icon
+                svg
+                    fill: $white
+            p
+                color: $white
+
+.breadcrumb-box
+    li
+        color: $black!important
+        a
+            color: $dark-blue
+
+.post 
+    .container 
+        .row
+            .post-icon
+                .icon
+                    svg
+                        fill: $dark-blue    
